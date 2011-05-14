@@ -12,6 +12,5 @@ The tool dates back to 2005 from my first workshops for SAP XI 3.0, so it's java
 
 Test Data could be entered either manually or stored locally.
 
-* Storage of environment data (server, host and interfaces to test) are stored in a JSON String (Data.js)
-* Storage of Payload is done locally in a folder named payloads
-
+ * Storage of environment data (server, host and interfaces to test) are stored in a JSON String (Data.js)
+ * Storage of Payload is done locally in a folder named payloads
