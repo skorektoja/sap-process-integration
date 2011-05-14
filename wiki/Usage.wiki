@@ -1,0 +1,16 @@
+#summary Simle Explanation Http Post Tool.
+
+= Introduction =
+
+The Http Post Tool is made to send repeatable test cases to mutliple environments of a SAP Process Integration/ABAP Proxy Runtime landscape for testing purposes.
+
+It supports posting plain XML and SOAP Messages to the Integration Engine (Central/Proxy Runtime) and to the SAP PI 7.3 HTTP Java based Adapter.
+
+The tool dates back to 2005 from my first workshops for SAP XI 3.0, so it's javascript impl might not be on latest level. I could imagine a way more fly version with local storage and jQuery. However it works fine on common IE and Firerfox Versions.
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
