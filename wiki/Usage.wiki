@@ -26,3 +26,7 @@ The file structure of the whole tool looks like this:
       * 1.xml
       * 2.xml
       * 3.xml
+
+= Structure of Data.js = 
+
+...tbc
