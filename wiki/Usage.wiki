@@ -19,10 +19,10 @@ Beside that Test Data could be entered either manually or stored locally.
 
 The file structure of the whole tool looks like this:
 
-- HttpPostTool.html
-- Functions.js
-- Data.js (references payloads folder)
-- payloads (Folder)
-      - 1.xml
-      - 2.xml
-      - 3.xml
+ * HttpPostTool.html
+ * Functions.js
+ * Data.js (references payloads folder)
+ * payloads (Folder)
+      * 1.xml
+      * 2.xml
+      * 3.xml
