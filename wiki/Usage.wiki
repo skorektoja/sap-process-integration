@@ -4,9 +4,12 @@
 
 The Http Post Tool is made to send repeatable test cases to mutliple environments of a SAP Process Integration/ABAP Proxy Runtime landscape for testing purposes.
 
+Often the same messages need to be posted through PI again and again, even on DEV and later TEST, eventually even on PROD environments.
+To avoid typing these by hand on tools like the common HttpPost Tools that circulate on [http://sdn.sap.com sdn], i build these small HTML/javascript based tool.
+
 It supports posting plain XML and SOAP Messages to the Integration Engine (Central/Proxy Runtime) and to the SAP PI 7.3 HTTP Java based Adapter.
 
-The tool dates back to 2005 from my first workshops for SAP XI 3.0, so it's javascript impl might not be on latest level. I could imagine a way more fly version with local storage, HTML5 or jQuery. However it works fine on common IE and Firerfox Versions.
+The tool dates back to 2005 from my first workshops for SAP XI 3.0, so it's javascript impl might not be on latest level. Nowadays for a lot of cases SOAPUI (plain SOAP) can do that thing, I also could imagine a way more fly version with local storage, HTML5 or jQuery. However it works fine on common IE and Firerfox Versions and with all common formats (IE with or without SOAP envelope) and doesn't require any jar files, just simply a web browser.
 
 = Test Data and structure of the tool =
 
