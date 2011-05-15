@@ -32,14 +32,49 @@ The file structure of the whole tool looks like this:
 Defining a PI instance:
 {{{
 var instances={
-        "instances":[ 
-          {"name":"<your PI Instance name>", 
-           "host": "<your host name of the PI instance>",
-           "port": "<your port of the PI instance>"
-          }
-         ]
-       	};
+    "instances":[ 
+       {"name":"<your PI Instance name>", 
+        "host": "<your host name of the PI instance>",
+        "port": "<your port of the PI instance>"
+       }
+    ]
+    };
 }}}
 
+Adding test data to the instance with the senders array:
+
+{{{
+var instances={
+    "instances":[ 
+       {"name":"<your PI Instance name>", 
+        "host": "<your host name of the PI instance>",
+        "port": "<your port of the PI instance>",
+        "senders": [
+           {"name": "DEV_SENDER_1", 
+            "interfaces":[
+               {"name":"getCustomerWithDetail",
+        	"namespace":"http://mycompany.com/domain",
+                "qos":"BE",
+                "payload":"payloads/GetCustomersRequest.xml"
+               },
+               {"name":"PostFinanceStatement",
+        	"namespace":"http://mycompany.com/finance/statements",
+                "qos":"EOIO",
+                "payload":"payloads/PostFinanceStatement.xml"
+               }
+            ]
+           },
+           {"name": "DEV_SENDER_2", 
+            "interfaces":[
+               {"name":"getCustomerWithDetail",
+                "namespace":"http://mycompany.com/domain",
+                "qos":"BE",
+                "payload":"payloads/GetCustomersRequest.xml"
+               }
+             ]
+           }
+      ]
+     };
+}}}
 
 ...tbc
