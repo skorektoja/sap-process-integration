@@ -41,7 +41,7 @@ var instances={
     };
 }}}
 
-Adding test data to the instance with the senders array:
+Adding test data to the instance with the senders array (here DEV_SENDER_1 and DEV_SENDER_2 :
 
 {{{
 var instances={
