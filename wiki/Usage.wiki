@@ -29,4 +29,17 @@ The file structure of the whole tool looks like this:
 
 = Structure of Data.js = 
 
+Defining a PI instance:
+{{{
+var instances={
+        "instances":[ 
+          {"name":"<your PI Instance name>", 
+           "host": "<your host name of the PI instance>",
+           "port": "<your port of the PI instance>"
+          }
+         ]
+       	};
+}}}
+
+
 ...tbc
