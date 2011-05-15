@@ -60,10 +60,10 @@ var instances={
                 "qos":"BE",
                 "payload":"payloads/GetCustomersRequest.xml"
                },
-               {"name":"PostFinanceStatement",
+               {"name":"storeFinanceStatement",
         	"namespace":"http://mycompany.com/finance/statements",
                 "qos":"EOIO",
-                "payload":"payloads/PostFinanceStatement.xml"
+                "payload":"payloads/StoreFinanceStatement.xml"
                }
             ]
            },
