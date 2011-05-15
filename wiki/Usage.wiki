@@ -30,6 +30,10 @@ The file structure of the whole tool looks like this:
       * 2.xml
       * 3.xml
 
+= Download = 
+
+Download [http://code.google.com/p/sap-process-integration/downloads/detail?name=version_1.zip&can=2&q= here]
+
 = Javascript and Browser Security =
 
 Firefox and Internet Explorer may ask you to grant access to your filesystem when loading json and xml files. For success Grant it! :)
