@@ -1,5 +1,5 @@
 #summary Simle Explanation Http Post Tool.
-#labels SAP,PI,XI,Test,XML,SOAP,HTTP
+#labels SAP,PI,XI,Test,XML,SOAP,HTTP,7.3,ProcessIntegration,ESB
 
 = Introduction =
 
