@@ -11,7 +11,7 @@ To avoid typing these by hand like it need to be done by using the common Http P
 
 It supports posting plain XML and SOAP Messages to the Integration Engine (Central/Proxy Runtime) and to the SAP PI 7.3 HTTP Java based Adapter.
 
-The tool dates back to 2005 from my first workshops for SAP XI 3.0, so it's javascript impl might not be on latest level. Nowadays for a lot of cases SOAPUI (plain SOAP) can do that thing, I also could imagine a way more fly version with local storage, HTML5 or jQuery. However it works fine on common IE and Firerfox Versions and with all common formats (IE with or without SOAP envelope) and doesn't require any jar files, just simply a web browser.
+The tool dates back to 2005 from my first workshops for SAP XI 3.0, so it's javascript implementation might not be on latest level. Nowadays for a lot of cases SOAPUI (plain SOAP) can do that thing, I also could imagine a way more fly version with local storage, HTML5 or jQuery. However it works fine on common IE and Firerfox Versions and with all common formats (IE with or without SOAP envelope) and doesn't require any jar files, just simply a web browser.
 
 = Test Data and structure of the tool =
 
