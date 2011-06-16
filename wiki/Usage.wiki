@@ -7,7 +7,7 @@ The Http Post Tool is made to send repeatable test cases to mutliple environment
 Often the same messages need to be posted through PI again and again, even on DEV and later TEST stages of a PI landscape.
 Eventually even on PROD environments.
 
-To avoid typing these by hand on tools like by using the common Http Post Tools that circulate on [http://sdn.sap.com sdn], i build this small HTML/javascript based tool. It runs on every device with a regular Firefox or Internet Explorer Browser, so NO install is needed.
+To avoid typing these by hand like it need to be done by using the common Http Post Tools that circulate on [http://sdn.sap.com sdn], i build this small HTML/javascript based tool. It runs on every device with a regular Firefox or Internet Explorer Browser, so NO install is needed.
 
 It supports posting plain XML and SOAP Messages to the Integration Engine (Central/Proxy Runtime) and to the SAP PI 7.3 HTTP Java based Adapter.
 
