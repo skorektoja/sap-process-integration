@@ -23,7 +23,7 @@ Beside that Test Data could be entered either manually or stored locally.
  * Storage of environment data (server, host and interfaces to test) are stored in a JSON String (Data.js)
  * Storage of Payload is done locally in a folder named payloads
 
-The file structure of the whole tool looks like this:
+The file structure of the tool looks like this:
 
  * HttpPostTool.html
  * Functions.js
