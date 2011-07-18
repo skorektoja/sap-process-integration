@@ -35,7 +35,7 @@ The file structure of the tool looks like this:
 
 = Download = 
 
-Download [http://code.google.com/p/sap-process-integration/downloads/detail?name=version_1.zip&can=2&q= here]
+Download [http://code.google.com/p/sap-process-integration/downloads/detail?name=HttpPostTool_v1.zip&can=2&q=#makechanges here]
 
 = Javascript and Browser Security =
 
