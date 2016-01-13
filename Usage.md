@@ -1,0 +1,94 @@
+# Introduction #
+
+The Http Post Tool is made to send repeatable test cases to mutliple environments of a SAP PI (Process Integration or associated ABAP Proxy Runtimes) landscape for testing purposes.
+
+Often the same messages need to be posted through PI again and again, even on DEV and later TEST stages of a PI landscape.
+Eventually even on PROD environments.
+
+To avoid typing these by hand like it need to be done by using the common Http Post Tools that circulate on [sdn](http://sdn.sap.com), i build this small HTML/javascript based tool. It runs on every device with a regular Firefox or Internet Explorer Browser, so NO .exe install is needed.
+
+It supports posting plain XML and SOAP Messages to the Integration Engine (Central/Proxy Runtime) and to the SAP PI 7.3 HTTP Java based Adapter.
+
+The tool dates back to 2005 from my first workshops for SAP XI 3.0, so it's javascript implementation might not be on latest level. Nowadays for a lot of cases SOAPUI (plain SOAP) can do that thing, I also could imagine a way more fly version with local storage, HTML5 or jQuery. However it works fine on common IE and Firerfox Versions and with all common formats (IE with or without SOAP envelope) and doesn't require any jar files, just simply a web browser.
+
+# Test Data and structure of the tool #
+
+The tool itself consists of a single HTML page and the Functions.js, that contains all necessary Javascript functions.
+
+Beside that Test Data could be entered either manually or stored locally.
+
+  * Storage of environment data (server, host and interfaces to test) are stored in a JSON String (Data.js)
+  * Storage of Payload is done locally in a folder named payloads
+
+The file structure of the tool looks like this:
+
+  * HttpPostTool.html
+  * Functions.js
+  * Data.js (references payloads folder)
+  * payloads (Folder)
+    * 1.xml
+    * 2.xml
+    * 3.xml
+
+# Download #
+
+Download [here](http://code.google.com/p/sap-process-integration/downloads/detail?name=HttpPostTool_v1.zip&can=2&q=#makechanges)
+
+# Javascript and Browser Security #
+
+Firefox and Internet Explorer may ask you to grant access to your filesystem when loading json and xml files. For success Grant it! :)
+AFAIK this is not allowed by Chrome, sorry!
+
+**Note!** _The Http Post Tool worked quite well with older browser generations. Due to more strict cross domain checking (especially in Firefox), i am currently working on a rewrite._
+
+# Structure of Data.js #
+
+Defining a PI instance:
+```
+var instances={
+    "instances":[ 
+       {"name":"<your PI Instance name>", 
+        "host": "<your host name of the PI instance>",
+        "port": "<your port of the PI instance>"
+       }
+    ]
+    };
+```
+
+Adding test data to the instance with the senders array (here DEV\_SENDER\_1 and DEV\_SENDER\_2 :
+
+```
+var instances={
+    "instances":[ 
+       {"name":"<your PI Instance name>", 
+        "host": "<your host name of the PI instance>",
+        "port": "<your port of the PI instance>",
+        "senders": [
+           {"name": "DEV_SENDER_1", 
+            "interfaces":[
+               {"name":"getCustomerWithDetail",
+        	"namespace":"http://mycompany.com/domain",
+                "qos":"BE",
+                "payload":"payloads/GetCustomersRequest.xml"
+               },
+               {"name":"storeFinanceStatement",
+        	"namespace":"http://mycompany.com/finance/statements",
+                "qos":"EOIO",
+                "payload":"payloads/StoreFinanceStatement.xml"
+               }
+            ]
+           },
+           {"name": "DEV_SENDER_2", 
+            "interfaces":[
+               {"name":"getCustomerWithDetail",
+                "namespace":"http://mycompany.com/domain",
+                "qos":"BE",
+                "payload":"payloads/GetCustomersRequest.xml"
+               }
+             ]
+           }
+      ]
+     };
+```
+
+...tbc
